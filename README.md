@@ -77,3 +77,7 @@ When the target variable that we’re trying to predict is continuous, such as i
 ### Cost Function
 
 ![Costfunction](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/R2YF5Lj3EeajLxLfjQiSjg_110c901f58043f995a35b31431935290_Screen-Shot-2016-12-02-at-5.23.31-PM.png?expiry=1598400000000&hmac=7tuT-Q_8Rn6n2wBFWV8HUgAsNXcgDPNW8S1x3ZMw2wY)
+
+We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's.
+
+This function is otherwise called the "Squared error function", or "Mean squared error".  The mean is halved (1/2) as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the 1/2 term.
